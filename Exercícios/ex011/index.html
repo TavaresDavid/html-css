@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+   <H1>Imagem dinâmica</H1>
+   <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+       <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem flexível">
+       </picture>
+   <h2>Instruções para a tag sobre imagem dinâmica</h2>
+   <p>
+    De começo, vamos usar a tag (picture)
+   </p>
+   <h1>Reproduzindo Áudio</h1>
+   <P>Vamos aprender a reproduzir audio em HTML5</P>
+   <audio src="midias/bartz-disfarcado-no-cabelinho-ccfcf274.mp3" controls autoplay></audio>
+   <br>
+   <audio preload="metadata" controls loop>
+        <source src="midias/bartz-disfarcado-no-cabelinho-ccfcf274.mp3" type="audio/mpeg">
+   </audio>
+
+   <p> Basicamente, para adicionarmos um áudio em nosso site, usaremos a tag <strong>(audio src"")</strong> depois de adicionarmos o audio dentro das aspas, acrescentaremos mais um comando dentro da mesma tag, ficando assim; <strong><mark style="background-color: rgb(6, 255, 35);">(audio src="link do audio" controls)</mark></strong>. esse foi a primeria forma de inserir audio no nosso site.
+    A segunda forma é: (audio preload= "metadata" controls loop) dentro dessa tag vamos colocar como se fosee em coluna a tag <strong><mark style="background-color: rgb(16, 255, 8);">(source src= " link do audio" type="audio/mpeg")</mark></strong> esse <strong>mpag</strong> usado é somente para arquivo mp3.
+   </p>
+</body>
+</html>

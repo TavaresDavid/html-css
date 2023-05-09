@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+      /* Seletores Personalizados 
+
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = cildren (FILHO)
+        
+    */
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a{
+                color: rgb(237, 20, 20);
+                text-decoration: none; /* Tirar o sublinhado */
+                font-weight: bold;     /* Colocar em Negrito */
+            }
+            a:visited{    /* Só vão ficar vermelho os sites que já foram visitados */
+                color: red;
+            }
+            a:hover{      /* Deixar sublinhado e preto ao passar o mouse em cima */
+                color: black;                   
+                text-decoration: underline;
+            }
+            a:active{     /* O Link que for clicado ficará amarelo */
+                color: yellow;
+            }
+            .especial{                             
+                background-color: rgb(230, 220, 87);
+            }
+            .especial::before{ /* Consigo acrescentar diversos elementos ANTES do texto */
+                content: '♦ ';
+            }
+            .especial::after{  /* Consigo acrescentar diversos elementos DEPOIS do texto */
+                content:' ♦';
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <li><a href="https://gustavoguanabara.github." target="_blank" class="especial">Repositóro GitHub</a></li>
+    <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do YouTube</a></li>
+    <li><a href="https:www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+</body>
+</html>

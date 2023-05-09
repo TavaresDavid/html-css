@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+
+Tudo que em HTML é id = em CSS é # (cerquilha) só pode um elemento
+Tudo que em HTML é class = em CSS é . (ponto) pode ter mais elementos 
+
+*/
+
+body{
+    background-color: rgb(217, 236, 217);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: green;
+}
+h1#principal{
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+h2{
+    color: green;
+}
+
+.básico{
+    color: #3c805e;
+    
+}
+
+.intermediario{
+    color: #80793c;
+
+}
+.avançado{
+    color: #803c3c;
+
+}
+.destaque{
+    background-color: #ffff0ef8;
+}

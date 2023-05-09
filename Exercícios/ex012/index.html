@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML</title>
+</head>
+<body>
+    <H1>Inserindo vídeos hospedados localmente</H1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video src="midias/meu-video.mp4" width="500" controls loop></video>
+    <p>
+        A dica acima é colocar sempre em todos os formatos, pois, não são todos os navegadores que aceitam determinado formato de vídeo.
+    </p>
+    <p>
+        Na tag <strong><mark style="background-color: green;">(video)</mark></strong> usamos a outra tag <strong><mark style="background-color: green;">(width="500")</mark> </strong>somente para reduzir o tamanho em questão de proporção do vídeo, mas seu formato será o mesmo.
+        E com sempre, usamos a tag <strong><mark style="background-color: green;">(controls)</mark></strong>
+         para executar o vídeo.
+    </p>
+    <p>Para adicionarmos vários formatos da maneira correta faremos o seguinte:</p>
+    <p>faremos igual quando hopedamos o audio, então vamos usar a tag dessa forma: <mark style="background-color: greenyellow;">(video controls)</mark>, em seguida usaremos a tag <mark style="background-color: greenyellow;">(source:src)</mark> ainda dentro da tag video. Apartir daí, adicionaremos os formatos um em baixo do outro.        
+    </p>
+
+    <video width="500" poster="imagens/imagem jpeg.jpg" controls autoplay loop>
+        <source src="midias/meu-video.mp4" type="video/mp4">
+        <source src="midias/meu-videoogv.ogv" type="video/ogv">
+        <source src="midias/meu-video webm.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+       <p>
+        Nessa tag também, podemos acresecentar a tag <mark style="background-color: greenyellow;">(width="500")</mark> para diminuir a proporção dos vídeos.
+        E podemos também usar a tag <mark style="background-color: greenyellow;">(poste="imagem desejada")</mark> para acresentar uma capa antes de iniciar o vídeo.
+        Ficando assim:
+       </p>
+
+      
+</body>
+</html>

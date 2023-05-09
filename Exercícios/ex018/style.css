@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'love';
+    src: url('fonts/DESIGNER.otf') format('opentype'), url('fonts/DESIGNER.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'grafity';
+    src: url('fonts/Compass.ttf') format('opentype'), url('fonts/Compass.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rabisco';
+    src: url('fonts/LoudBeats.ttf') format('opentype'), url('fonts/LoudBeats.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-family: 'love', serif;
+    font-size: 3em;
+    background-color: rgb(14, 14, 110);
+    color: white;
+}
+
+h2{
+    font-family: 'grafity', serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.terceira{
+    font-family:'rabisco', serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+div{
+    display: inline-block;
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+div:hover{
+    background-color: blue;
+}
