@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*Tamanho mínimo da minha viewport vai ser de 100%*/
+    background-color: darkgrey;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{  /*Tag: text-transform: uppercase; transforma tudo em maiúsculo
+    Tag: font-variant: small-caps; Continuo tendo as letras em maiúsculas porém, as primeiras ficam maiores (em destaque)  */
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header p{ 
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{ /* Vai fazer com que o texto ganhe 10% de espaço da minha tela, ficando    também um pouco responsivo conforme eu diminua o tamanho da minha tela*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento duplo entre as linhas*/
+    padding-left: 30px;
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: rgba(0, 0, 0, 0.239);
+    color: white;
+}
+
+.imagem p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.598);
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
