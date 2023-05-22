@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family= Passion +One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Sriracha & display=swap');
+
+:root{
+    --fonte1: verdana, geneva, tahoma, san-serif;
+    --fonte2: font-family: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +18,7 @@
 html, body{
     min-height: 100vh; /*Tamanho mínimo da minha viewport vai ser de 100%*/
     background-color: darkgrey;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -20,6 +31,8 @@ header h1{  /*Tag: text-transform: uppercase; transforma tudo em maiúsculo
     Tag: font-variant: small-caps; Continuo tendo as letras em maiúsculas porém, as primeiras ficam maiores (em destaque)  */
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw; /* 10% da largura da tela*/
 }
 header p{ 
     padding-bottom: 50px;
@@ -40,6 +53,8 @@ section{ /* Vai fazer com que o texto ganhe 10% de espaço da minha tela, ficand
     padding-bottom: 10vh;
     line-height: 2em; /*espaçamento duplo entre as linhas*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 .normal{
@@ -52,7 +67,8 @@ section{ /* Vai fazer com que o texto ganhe 10% de espaço da minha tela, ficand
 }
 
 .imagem p{
-    width: 400px;
+    display: inline-block; /* transforma naquela caixa que se adapta ao conteúdo*/
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.598);
 }
 
