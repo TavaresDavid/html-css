@@ -57,19 +57,38 @@ section{ /* Vai fazer com que o texto ganhe 10% de espaço da minha tela, ficand
     font-size: 3.5vw;
 }
 
+section p{
+    padding-bottom: 2em;
+}
+
 .normal{
     background-color: white;
     color: black;
 }
 .imagem{
-    background-color: rgba(0, 0, 0, 0.239);
+    background-color: rgba(0, 0, 0, 0.345);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.585);/*adiciona uma sombra interna na imagem */
+    background-size: cover; /*Diminuiu o tamanho da imagem sem alterara a qualidade ( assim ela se adapta melhor quando a tela for menor*/
+    background-attachment: fixed; /* Tag que causou o efeito paralax ( basicamente ele fixou a imagem na tela de fundo ocupando a tela inteira mas sem ficar totalmente perceptível*/
+    
+}
+
+#img01{
+    background-image: url('../imagens/background001.jpg'); /* Tag para adicionar a imagem*/
+    background-position: right center; /* Posição da imagem, no caso ( centralizado à direita*/
+}
+
+#img02{
+    background-image: url('../imagens/background002.jpg');
+    
 }
 
 .imagem p{
     display: inline-block; /* transforma naquela caixa que se adapta ao conteúdo*/
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.598);
+    background-color: rgba(0, 0, 0, 0.377);
+    text-shadow: 1px 1px 0px black; /*Sombra no texto*/
 }
 
 footer{
