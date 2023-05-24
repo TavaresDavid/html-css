@@ -12,38 +12,41 @@
         }
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-            border: ;
+            
         }
-        tr.linha{
-            background-color: gray;
-        }
+
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /*Tag usada para alinhamento horizontal*/
+            vertical-align: middle; /*Tag usada para alinhamento veritcal (middle - meio, top - em cima, bottom - em baixo)*/
         }
-        td.dado{
-            background-color: yellow;
+
+        .numero{
+            text-align: right;
         }
+       
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
     <table>
         <tr><!--Primeira linha-->
-            <td class="dado">A1</td>
-            <td class="dado">B1</td>
-            <td class="dado">C1</td>
+            <td >A1</td>
+            <td >B1</td>
+            <td >C1</td>
         </tr>
-        <tr class="linha"> <!--Segunda linha-->
+        <tr > <!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>    <!--dados da tabela (células)-->
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr> <!--Terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr> <!--Quarta linha-->
             <td>A4</td>
