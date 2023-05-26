@@ -56,13 +56,3 @@ footer{
 footer > p{
     margin: 0px;
 }
-div#bola{
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 10px;
-   display: inline-block;  
-}
