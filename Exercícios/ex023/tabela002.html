@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse; /*colar todas as linhas da tabela*/
+            position: relative;
         }
         caption{
             font-size: 1.5em;
@@ -27,9 +28,18 @@
             background-color: gray;
             color: white;
         }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:gray ;
+        }
+        tbody > tr:nth-child(even){  /*Efeito zebrado as linhas pares*/
+            background-color: rgb(164, 163, 163);
+        }
         .num{
             text-align: right;
         }
+
     </style>
 </head>
 <body>
@@ -160,6 +170,7 @@
             </tr>
            
         </tbody>
+        
         <tfoot> <!--Tag para o rodapé-->
             <tr>
                 <th scope="row">Total de habitantes</th>
