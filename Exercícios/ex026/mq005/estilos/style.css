@@ -26,6 +26,11 @@ header{
 #burguer:hover{
     background-color: white;
     color: black;
+    transition: 0.5s;
+}
+
+a:hover{
+    transition: 0.5s;
 }
 
 header > h1{
